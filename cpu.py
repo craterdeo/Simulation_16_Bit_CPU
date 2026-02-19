@@ -61,6 +61,10 @@ class Mini16CPU:
             if self.zero:
                 self.pc = imm
 
+        elif opcode == 0x8:      # JNZ 
+            if not self.zero:
+                self.pc = imm
+
         elif opcode == 0xF:      # HALT
             self.running = False
 
