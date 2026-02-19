@@ -113,10 +113,10 @@ program = [
 
     0xC200,  #MOV r0 -> r2
     0x1210,  #ADD r2, r1 -> r2
-    0x920D,  #JC end = 12
+    0x920D,  #JC end = 13
 
     0xB300,  #INC r3
-    0x930D,  #JC end = 12
+    0x930D,  #JC end = 13
     0x6317,  #STORE r3 -> mem[23]
     0x6218,  #STORE r1 -> mem[24]
 
