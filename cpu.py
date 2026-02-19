@@ -1,10 +1,10 @@
 class Mini16CPU:
     def __init__(self, mem_size=256):
-        self.reg = [0] * 16          # 16 general purpose registers
-        self.pc = 0                 # program counter
-        self.mem = [0] * mem_size   # 16-bit memory
+        self.reg = [0] * 16          
+        self.pc = 0                 
+        self.mem = [0] * mem_size   
         self.running = False
-        self.zero = 0               # zero flag
+        self.zero = 0               
 
     def reset(self):
         self.reg = [0] * 16
